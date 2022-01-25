@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,38 +12,49 @@
 </head>
 
 
+<header class="header">
+    <p class="menu">
+        Home
+        Contact
+        About us
+    </p>
+</header>
+
 <body class="corpo">
-    <div class="emails"> 
-        <label>
-            E-mail: 
-        </label>
-        <input type="text" >
-        <br/>
-        <label>
-            Repetir E-mail: 
-        </label>
-        <input type="text">
-    </div>
+    <form>
+        <div class="principal">
+            <div class="emails"> 
+                <label class="required">
+                    E-mail 
+                </label>
+                <input type="text" placeholder="Digite aqui seu email" required>
+                <br/>
+                <label class="required"> 
+                    Repetir E-mail 
+                </label>
+                <input type="text">
+            </div>
 
-    <div class="senhas">
-        <label>
-            Crie uma senha
-        </label>
-        <input type="password" minlength="4" maxlength="8">
-        <label>
-            Repetir senha
-        </label>
-        <input type="password" minlength="4" maxlength="8">
-    </div>
+            <div class="senhas">
+                <label class="required">
+                    Crie uma senha
+                </label>
+                <input type="password" minlength="4" maxlength="8">
+                <label class="required"> 
+                    Repetir senha
+                </label>
+                <input type="password" minlength="4" maxlength="8">
+            </div>
 
-    Dados Cadastrais
+            Dados Cadastrais
 
-    Endereço de entrega
+            Endereço de entrega
 
-    <br/><br/>
-    
-    <input type="radio" checked>Pessoa Física
-    <input type="radio">Pessoa Júridica
-
+            <br/><br/>
+        
+            <input type="radio" name="tipoPessoa" checked>Pessoa Física
+            <input type="radio" name="tipoPessoa">Pessoa Júridica
+        </div>
+    </form>
 </body>
 </html>

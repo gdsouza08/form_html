@@ -1,4 +1,35 @@
 
-.corpo {
-    background-color: rgb(245, 245, 248);
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: black;
+    opacity: 90%;
+    transition: all ease 0.5s;
+}
+
+p.menu {
+    color: #ffffff;
+}
+
+
+
+.principal {
+  
+}
+
+.emails {
+    padding: 0 30px;
+}
+
+.required:after {
+    content: " *";
+    color: red;
 }
