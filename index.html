@@ -21,6 +21,8 @@
 </header>
 
 <body class="corpo">
+    Para se cadastrar a uma viagem para a lua com a NASA, preencha o formulário abaixo:
+    
     <form>
         <div class="principal">
             <div class="emails"> 
@@ -32,19 +34,20 @@
                 <label class="required"> 
                     Repetir E-mail 
                 </label>
-                <input type="text">
+                <input type="text" placeholder="Repita seu email" >
             </div>
 
             <div class="senhas">
                 <label class="required">
                     Crie uma senha
                 </label>
-                <input type="password" minlength="4" maxlength="8">
+                <input type="password" placeholder="Digite aqui sua senha" minlength="4" maxlength="8">
                 <label class="required"> 
                     Repetir senha
                 </label>
-                <input type="password" minlength="4" maxlength="8">
+                <input type="password" placeholder="repita sua senha"  minlength="4" maxlength="8">
             </div>
+            <br/><br/><br/>
 
             Dados Cadastrais
 
@@ -54,6 +57,31 @@
         
             <input type="radio" name="tipoPessoa" checked>Pessoa Física
             <input type="radio" name="tipoPessoa">Pessoa Júridica
+            <br/><br/><br/>
+
+            <div>
+                <label class="required">
+                    Nome Completo
+                </label>
+                <input type="text" placeholder="Digite aqui o nome completo" maxlength="100"required>
+                <br/>
+                <label class="required">
+                    Sexo
+                </label>
+                
+                    <select class="opcoes"> 
+                        <option>
+                            Selecione
+                        </option>
+                        <option>
+                            Feminino
+                        </option>
+                        <option>
+                            Masculino
+                        </option>
+                    </select>
+                
+            </div>
         </div>
     </form>
 </body>
